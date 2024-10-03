@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="whatsappAvatar.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Resume</h1>
+    </header>
+
+    <main id="cv-main">
+        <!-- Personal Info -->
+        <section>
+            <h2 id="cv-name">Samreen Saif</h2>
+            <h3 id="cv-title">Software Engineer</h3>
+        </section>
+
+        <section id="personal-image">
+            <div id="cv-image-container">
+                <img src="whatsappAvatar.webp" id="cv-image" alt="Uploaded Picture" />
+            </div>
+        </section>
+
+        <section id="personal-info">
+            <div id="cv-info-container">
+                <p id="cv-email"><i class="fa-solid fa-envelope" aria-label="Email"></i> samreenk81@gmail.com</p>
+                <p id="cv-phone"><i class="fa-solid fa-phone" aria-label="Phone"></i> +92-21-1224567</p>
+                <p id="cv-address"><i class="fa-solid fa-location-dot" aria-label="Address"></i> House# 122, Street# 456, City, Country</p>
+            </div>
+        </section>
+
+        <!-- Objective Section -->
+        <section id="objective">
+            <h2>Objective:</h2>
+            <p id="cv-objective">
+                A highly motivated Front-End Developer with a strong passion for crafting seamless and intuitive user
+                interfaces. Seeking to leverage expertise in HTML, CSS, JavaScript, and modern frameworks like React.js and
+                Vue.js to contribute to a dynamic team. Dedicated to building responsive, accessible, and performant web
+                applications that enhance user experience and drive business success. Committed to continuous learning and
+                staying updated with the latest trends in web development.
+            </p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work-experience">
+            <h2>Work Experience:</h2>
+            <p id="cv-job-title">Front-End Developer</p>
+            <p id="cv-company">ABC Company</p>
+            <p id="cv-work-duration">January 2017 - July 2020</p>
+            <p id="cv-job-description">Developed new user-facing features using HTML, CSS, and JavaScript (React.js, Vue.js, Angular).</p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education:</h2>
+            <p id="cv-degree">Bachelors of Computer Science</p>
+            <p id="cv-institution">ABC University</p>
+            <p id="cv-graduation-year">2010</p>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h2>Achievements:</h2>
+            <ul id="cv-achievements">
+                <li><strong>Performance Optimization:</strong> Improved page load time by 35% by optimizing CSS, implementing lazy loading, and reducing JavaScript file sizes.</li>
+                <li><strong>Responsive Design:</strong> Led mobile-first design, increasing mobile traffic by 40%.</li>
+                <li><strong>Component Library:</strong> Built a reusable React component library, reducing development time by 25%.</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills:</h2>
+            <ul id="cv-skills">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Frameworks: React.js, Vue.js, Angular</li>
+                <li>Version Control: Git</li>
+                <li>Responsive Web Design</li>
+            </ul>
+        </section>
+
+        <button class="btn" id="toggle-btn" aria-label="Toggle Section Highlight">Toggle Sections</button>
+        <button class="btn" id="objBtn" data-target="#objective">Objective</button>
+        <button class="btn" id="workBtn" data-target="#work-experience">Work Experience</button>
+        <button class="btn" id="eduBtn" data-target="#education">Education</button>
+        <button class="btn" id="achBtn" data-target="#achievements">Achievements</button>
+        <button class="btn" id="skillBtn" data-target="#skills">Skills</button>
+        <button class="btn" id="downloadBtn" data-target="#skills">Download-Cv</button>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Developed and Designed by <a href="https://github.com/samreensaif/Sams-Resume-Builder.git" target="_blank" class="link">Samreen Saif</a></p>
+            <p>&copy; All Rights Reserved by Samreen Saif</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
