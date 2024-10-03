@@ -6,6 +6,9 @@ import { buttonVariants } from "@/components/ui/button";
 import Icons from "./icons/icons";
 import Image from "next/image";
 import Link from "next/link";
+import About from "./about/page";
+import Projects from "./projects/page";
+import Contact from "./contact/page";
 export default function Home() {
   return (
     <>
@@ -46,6 +49,15 @@ export default function Home() {
         </div>
         <div id="right" className=" w-full md:w-1/2  bg-yellow-400 flex justify-center items-center">
           <Image src="/assets/whatsappAvatar.webp" alt="WhatsApp Avatar" width={500} height={500} className="rounded-full mt-8 mb-10 w-3/4 md:w-auto md:mt-5 border-none shadow transition-all duration-1000 hover:shadow-2xl hover:shadow-red-800 hover:animate-pulse" />
+        </div>
+        <div className="">
+          <About/>
+        </div>
+        <div>
+          <Projects/>
+        </div>
+        <div>
+          <Contact/>
         </div>
       </div>
     </>
