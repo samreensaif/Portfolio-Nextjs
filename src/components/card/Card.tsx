@@ -11,7 +11,7 @@ function Card(props: CardProps) {
 
   return (
     <>
-      <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg p-6 bg-red-800 border border-gray-200">
+      <div className=" max-w-52 md:max-w-sm rounded-2xl overflow-hidden shadow-lg p-6 bg-red-800 border border-gray-200">
         <Image 
           src={props.imageSrc} 
           alt="Card Image" 
