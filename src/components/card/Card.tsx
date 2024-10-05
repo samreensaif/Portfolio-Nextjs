@@ -15,8 +15,8 @@ function Card(props: CardProps) {
         <Image 
           src={props.imageSrc} 
           alt="Card Image" 
-          width={300}  
-          height={300}
+          width={200}  
+          height={200}
           
         />
         <div className="mb-4">
