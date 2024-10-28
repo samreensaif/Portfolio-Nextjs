@@ -57,11 +57,11 @@
   width: 12px; /* Set width */
   height: 12px; /* Set height */
   border-radius: 50%; /* Make buttons circular */
-  background: gray; /* Background color for inactive dots */
+  background: #c3b177; /* Background color for inactive dots */
 }
 
 .slick-dots li.slick-active button {
-  background: #991b1b; /* Color for active dot */
+  background: #c3b177; /* Color for active dot */
 }
 
 /* Ensure the container has enough height */

@@ -33,17 +33,17 @@ export default function Projects() {
   }
   return (
 
-    <div className='h-full w-screen bg-gradient-to-r from-teal-500 to-yellow-400 overflow-hidden '>
+    <div className='h-full w-screen bg-[#2c2c59] overflow-hidden border-b-2 border-black '>
 
 
       <div className='p-20'>
 
-       <h1 className='text-5xl text-red-800 text-center mb-14 font-semibold '>Projects</h1>
+       <h1 className='text-5xl sm:text-[70px] text-[#c3b177] text-center mb-14 font-semibold '>Projects</h1>
         <Slider {...settings} >
           {data.map((d,index) => (
-            <div key={index} className=' h-[350px] text-black rounded-xl mb-20'>
+            <div key={index} className=' h-[350px] text-[#c3b177] rounded-xl mb-20'>
 
-              <div className='h-56  rounded-xl bg-red-800 flex justify-center items-center'>
+              <div className='h-56  rounded-xl bg-[#c3b177] flex justify-center items-center'>
                 <Image src={d.img} width={150} height={150} alt="{d.name}" className='object-center w-3/4 h-3/4' />
               </div>
 

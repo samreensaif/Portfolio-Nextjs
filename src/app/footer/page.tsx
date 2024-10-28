@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className="w-full h-auto text-red-800 text-base md:text-xl bg-orange-400 flex flex-col md:flex-row justify-around items-center p-4">
+    <div className="w-full h-auto text-[#2c2c59] text-base md:text-xl bg-[#c3b177] flex flex-col md:flex-row justify-around items-center p-4">
       <p className="text-center md:text-left">
         Developed and Designed by 
         <Link 
