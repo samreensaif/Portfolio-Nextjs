@@ -3,7 +3,7 @@ import {faGithub, faFacebook,faInstagram, faLinkedin, faTwitter} from '@fortawes
 
 function Icons() {
   return (
-    <div className="flex justify-items-start items-center gap-8 ml-10">
+    <div className="flex justify-items-start items-center gap-8 ml-10" data-aos="fade-right">
             
               <a href="https://www.facebook.com/samreen.saif/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebook} className="text-3xl text-[#c3b177] transform transition-transform duration-1000 hover:rotate-180 "/>

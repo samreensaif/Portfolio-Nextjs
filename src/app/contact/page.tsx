@@ -1,17 +1,30 @@
-import React from 'react'
 import Icons from '../icons/icons';
 
+import { useEffect } from 'react';
+import AOS from 'aos';
+import React from 'react'
+
 function Contact() {
+  
+  useEffect(() => {
+    AOS.init({
+      // Customize options here
+      duration: 1500, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
+    <>
     <div className="flex justify-items-end items-center h-full w-screen bg-[#2c2c59] flex-col gap-8 overflow-hidden">
-      <div className="text-center mt-24">
+      <div className="text-center mt-24" data-aos="fade-right">
         <h1 className="text-3xl md:text-5xl sm:text-[70px] text-[#c3b177] font-semibold">Connect With Me</h1>
         <h2 className="text-[#c3b177] text-lg md:text-xl font-medium mt-8 p-3">
           Let&apos;s turn your vision into reality—shoot me a message!
         </h2>
       </div>
 
-      <div className="flex flex-col  justify-evenly items-center h-full w-full p-6  ">
+      <div className="flex flex-col  justify-evenly items-center h-full w-full p-6  " data-aos="fade-up">
         <form
           action="http://www.example.com/login.php"
           target="_blank"
@@ -93,17 +106,19 @@ function Contact() {
 
           <button
             type="submit"
-            className="w-full text-[#c3b177] font-medium py-2 rounded-xl hover:bg-[#c3b177] border hover:text-white border-[#c3b177] transition-colors duration-300 active:scale-90"
+            className="w-full text-[#c3b177] font-medium py-2 rounded-xl hover:bg-[#c3b177] border hover:text-[#2c2c59] border-[#c3b177] transition-colors duration-300 active:scale-90"
           >
             Submit
           </button>
         </form>
-        <div className='mt-9'>
-
-            <Icons />
-        </div>
       </div>
+       
+    
+      <Icons/>
     </div>
+    
+        
+      </>
   );
 }
 

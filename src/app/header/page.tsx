@@ -74,7 +74,7 @@ function Header() {
               href={"/"}
               className={`${buttonVariants({
                 variant: "ghost",
-              })} mt-5 mb-10 text-xl text-[#2c2c59] transition-colors duration-300 hover:bg-red-800 hover:text-[white] border:none `}
+              })} mt-5 mb-10 text-xl text-[#2c2c59] transition-colors duration-300 hover:text-[white] border:none `}
               onClick={() => setIsOpen(false)} // Close menu on link click
             >
               Home
@@ -83,7 +83,7 @@ function Header() {
               href={"/about"}
               className={`${buttonVariants({
                 variant: "ghost",
-              })} mb-10 text-xl text-[#2c2c59] transition-colors duration-300 hover:bg-red-800 hover:text-[white] `}
+              })} mb-10 text-xl text-[#2c2c59] transition-colors duration-300 hover:text-[white] `}
               onClick={() => setIsOpen(false)} // Close menu on link click
             >
               About
@@ -92,7 +92,7 @@ function Header() {
               href={"/projects"}
               className={`${buttonVariants({
                 variant: "ghost",
-              })} mb-10 text-xl text-[#2c2c59] transition-colors duration-300 hover:bg-red-800 hover:text-white `}
+              })} mb-10 text-xl text-[#2c2c59] transition-colors duration-300 hover:text-white `}
               onClick={() => setIsOpen(false)} // Close menu on link click
             >
               Projects
@@ -101,7 +101,7 @@ function Header() {
               href={"/contact"}
               className={`${buttonVariants({
                 variant: "ghost",
-              })}  mb-5 text-xl text-[#2c2c59] transition-colors duration-300 hover:bg-red-800 hover:text-white `}
+              })}  mb-5 text-xl text-[#2c2c59] transition-colors duration-300 hover:text-white `}
               onClick={() => setIsOpen(false)} // Close menu on link click
             >
               Contact

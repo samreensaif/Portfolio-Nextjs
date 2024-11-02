@@ -9,24 +9,36 @@ import Link from "next/link";
 import About from "./about/page";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
+import { useEffect } from 'react';
+import AOS from 'aos';
 export default function Home() {
+  
+  useEffect(() => {
+    AOS.init({
+      // Customize options here
+      duration: 1500, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <>
       <div className=" md:flex md:justify-center overflow-hidden  md:flex-row md:flex-wrap">
-        <div id="left" className=" w-full md:w-1/2 h-screen flex justify-center sm:place-items-center md:place-items-start flex-col gap-10 text-5xl text-black bg-[#2C2C59] border-b-2 border-black">
-        <h2 className="ml-11">Hi,</h2>
-        <h2 className="ml-11">I&apos;m <strong className="text-[#c3b177]">Samreen Saif</strong></h2>
-          <h2 className="ml-11">
+        <div id="left" className=" w-full md:w-1/2 h-screen flex justify-center sm:place-items-center md:place-items-start flex-col gap-10 text-5xl text-black bg-[#2C2C59] border-b-2 border-black" >
+        <h2 className="ml-11" data-aos="fade-right">Hi,</h2>
+        <h2 className="ml-11" data-aos="fade-right">I&apos;m <strong className="text-[#c3b177]">Samreen Saif</strong></h2>
+          <h2 className="ml-11" data-aos="fade-right">
             <Typewriter
               options={{
                 strings: ['A skilled Web Developer', 'A Coding Enthusiast', 'A Problem Solver'],
                 autoStart: true, // Automatically start typing
                 loop: true, // Loop through the strings
                 deleteSpeed: 50, // Adjust the delete speed if needed
+                
               }}
             />
           </h2>
-          <div className="flex gap-8 m-10">
+          <div className="flex gap-8 m-10" data-aos="fade-right">
           <Link
             href={"/CV/index.html"} target="_blank"
             className={`${buttonVariants({
@@ -44,11 +56,11 @@ export default function Home() {
             Hire me
           </Link>
         </div>
-          <Icons/>
+          <Icons />
 
         </div>
-        <div id="right" className=" w-full md:w-1/2  bg-black flex justify-center items-center">
-          <Image src="/assets/whatsappAvatar.webp" alt="WhatsApp Avatar" width={500} height={500} className="rounded-full mt-8 mb-10 w-3/4 md:w-auto md:mt-5 border-none shadow transition-all duration-1000 hover:shadow-2xl hover:shadow-[#c3b177] hover:animate-pulse" />
+        <div id="right" className=" w-full md:w-1/2  bg-black flex justify-center items-center" >
+          <Image src="/assets/whatsappAvatar.webp" alt="WhatsApp Avatar" width={500} height={500} className="rounded-full mt-8 mb-10 w-3/4 md:w-auto md:mt-5 border-none shadow transition-all duration-1000 hover:shadow-2xl hover:shadow-[#c3b177] hover:animate-pulse" data-aos="fade-left" />
         </div>
         <div className="">
           <About/>

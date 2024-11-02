@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sofadi+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import 'aos/dist/aos.css';
 
 #heading,#left h2,h1 {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
