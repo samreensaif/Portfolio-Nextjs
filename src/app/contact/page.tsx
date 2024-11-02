@@ -1,5 +1,6 @@
-import Icons from '../icons/icons';
+"use client";
 
+import Icons from '../icons/icons';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import React from 'react'

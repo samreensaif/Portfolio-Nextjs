@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "@/components/card/Card";
 import { useEffect } from 'react';
 import AOS from 'aos';
