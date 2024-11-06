@@ -40,7 +40,7 @@ export default function Home() {
           </h2>
           <div className="flex gap-8 m-10" data-aos="fade-right">
           <Link
-            href={"/CV/index.html"} target="_blank"
+            href={"https://final-resume-static.vercel.app"} target="_blank"
             className={`${buttonVariants({
               variant: "outline",
             })} text-lg font-bold transition-colors duration-300 text-[#c3b177] hover:bg-[#c3b177] hover:text-[#2c2c59] active:scale-90`}

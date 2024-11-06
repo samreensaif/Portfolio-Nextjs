@@ -99,7 +99,7 @@ const data = [
   {
     name: "Dynamic Resume Builder",
     description: "Built on HTML, CSS and TypeScript",
-    img: "/assets/imageRB.png",
+    img: "/assets/imageRB.jpg",
     
   },
   {

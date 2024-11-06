@@ -33,7 +33,7 @@ export default function About() {
           <div className="bg-slate-900 hover-grow row-span-2 hover:bg-bottom transition-all duration-1000 delay-100 hover:bg-slate-950 bg-cover bg-top font-medium h-full" style={{backgroundImage:'url(/assets/countdown.jpg)'}}></div>
 
           <div className="bg-slate-900 hover:bg-bottom transition-all delay-100 hover:bg-slate-950 duration-1000 bg-cover bg-top font-medium h-full" style={{backgroundImage:'url(/assets/imageCal.jpg)'}}></div>
-          <div className="bg-slate-900 hover-grow hover:bg-bottom transition-all delay-100 hover:bg-slate-950 row-span-2 duration-1000 bg-cover bg-top font-medium h-full" style={{backgroundImage:'url(/assets/imageRB.png)'}}></div>
+          <div className="bg-slate-900 hover-grow hover:bg-bottom transition-all delay-100 hover:bg-slate-950 row-span-2 duration-1000 bg-cover bg-top font-medium h-full" style={{backgroundImage:'url(/assets/imageRB.jpg)'}}></div>
 
           <div className="bg-slate-900 hover:bg-bottom transition-all delay-100 hover:bg-slate-950 duration-1000 bg-cover bg-top font-medium h-full" style={{backgroundImage:'url(/assets/NGG.png)'}}></div>
           <div className="bg-slate-900 hover-grow hover:bg-bottom transition-all delay-100 hover:bg-slate-950 row-span-2 transform duration-1000 bg-cover bg-top font-medium h-full" style={{backgroundImage:'url(/assets/tt.jpg)'}}></div>
