@@ -5,7 +5,16 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import Icons from '../icons/icons';
 
+
 function Contact() {
+
+  
+
+  function messageSent(){
+
+    alert("Message Sent Successfully");
+    
+  }
   
   useEffect(() => {
     AOS.init({
@@ -29,9 +38,7 @@ function Contact() {
 
       <div className="flex flex-col  justify-evenly items-center h-auto w-full p-6 bg-[#2c2c59] " data-aos="fade-up">
         <form
-          action="http://www.example.com/login.php"
-          target="_blank"
-          method="post"
+          
           className=" p-8 rounded-xl shadow-2xl w-full max-w-md"
         >
           <div className="mb-4">
@@ -107,12 +114,15 @@ function Contact() {
             ></textarea>
           </div>
 
-          <button
+          <button onClick={()=>messageSent()}
             type="submit"
             className="w-full text-[#c3b177] font-medium py-2 rounded-xl hover:bg-[#c3b177] border hover:text-[#2c2c59] border-[#c3b177] transition-colors duration-300 active:scale-90"
           >
             Submit
+
           </button>
+          
+          
         </form>
       </div>
           

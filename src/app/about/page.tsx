@@ -1,11 +1,22 @@
 "use client";
 
+import React from "react";
 import Card from "@/components/card/Card";
 import { useEffect } from 'react';
 import AOS from 'aos';
-import React from "react";
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from "embla-carousel-autoplay";
 
 export default function About() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 2000,stopOnMouseEnter:true,stopOnInteraction: false })
+  ]);
+
+  useEffect(() => {
+    if (emblaApi) {
+      console.log(emblaApi.slideNodes()); // Access API
+    }
+  }, [emblaApi]);
 
   useEffect(() => {
     AOS.init({
@@ -51,14 +62,47 @@ export default function About() {
           Skills
         </h1>
 
-        <div className="flex justify-center items-center gap-6 sm:gap-10 flex-wrap px-4" data-aos="fade-up">
+        <div className="embla  flex justify-center items-center gap-6 sm:gap-10 flex-wrap px-4"  ref={emblaRef}>
+
+
+        <div className="embla__container">
+
+        <div className="embla__slide flex " >
           <Card imageSrc="/assets/html.png" heading="HTML" description="frontend and backend expert developer"  />
           <Card imageSrc="/assets/cssf.png" heading="CSS" description="frontend and backend expert developer" />
-          <Card imageSrc="/assets/ts.png" heading="TypeScript" description="frontend and backend expert developer" />
+        </div>
+
+
+        <div className="embla__slide flex">
+          
+          <Card imageSrc="/assets/ts.png" heading="CSS" description="frontend and backend expert developer" />
           <Card imageSrc="/assets/njs.png" heading="NextJs" description="frontend and backend expert developer" />
+        
+        </div>
+
+      
+        
+        <div className="embla__slide flex">
+          
           <Card imageSrc="/assets/tw.jpg" heading="Tailwindcss" description="frontend and backend expert developer" />
-          <Card imageSrc="/assets/cover.png" heading="Shadcn" description="frontend and backend expert developer" />
+          <Card imageSrc="/assets/cover.png" heading="Shadcn" description="frontend and backend expert developer" />      
+        
+        
+        </div>
+        
+        <div className="embla__slide flex">
+
           <Card imageSrc="/assets/bs.png" heading="Bootstrap" description="frontend and backend expert developer" />
+          <Card imageSrc="/assets/js.png" heading="JavaScript" description="frontend and backend expert developer" />
+        </div>
+
+
+
+
+
+
+</div>
+          
         </div>
       </div>
     </>
